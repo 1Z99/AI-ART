@@ -1,0 +1,282 @@
+/* Reset and general styles */
+html {
+   border: 1px solid #ccc;
+ }
+ 
+ body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-image: url('https://i.ibb.co/qgLYD1N/New-Project-2.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+ 
+ /* CSS for centering the Artrc logo */
+ #Artrc {
+   text-align: center;
+   margin-top: 15px;
+   margin-bottom: -39px;
+   font-size: 24px;
+   color: #c30b15;
+ }
+ 
+ @media (max-width: 768px) {
+   #Artrc {
+     margin-top: -5px;
+     margin-bottom: -39px;
+     font-size: 16px;
+   }
+ }
+ 
+ #lmao {
+   color: #c30b15;
+   font-size: 24px;
+   box-sizing: border-box;
+ }
+ 
+ @media (max-width: 768px) {
+   #lmao {
+     font-size: 16px;
+   }
+ }
+ 
+ /* Main content styles */
+ .arrowButton {
+   position: absolute;
+   top: 50%;
+   font-size: 23px;
+   background: none;
+   border: none;
+   color: #c30b15;
+   cursor: pointer;
+   opacity: 0.5;
+   transform: translateY(-50%);
+   z-index: 1;
+ }
+ 
+ #prevSlide {
+   left: 60px;
+ }
+ 
+ #nextSlide {
+   right: 60px;
+ }
+ 
+ .slider {
+   position: relative;
+   margin: 0 auto;
+   margin-top: 30px;
+   overflow: hidden;
+   width: 94%;
+ }
+ 
+ .slider img {
+   display: block;
+   margin: 20px auto;
+   max-width: 70%;
+   height: auto;
+   border: 1px solid #ccc;
+   box-sizing: border-box;
+ }
+ 
+ /* Styles for the site explanation */
+ .siteExplanation {
+   padding: 10px 20px;
+ }
+ 
+ .explanationContent {
+   display: flex;
+   justify-content: space-around;
+   margin: auto;
+   max-width: 1243px;
+   align-content: center;
+   flex-wrap: wrap;
+   color: white;
+ }
+ 
+ .textSection {
+   width: calc(47% - 10px);
+   margin: auto;
+   margin-top: 40px;
+   text-align: center;
+ }
+ 
+ .imageSection {
+   margin: auto;
+   width: calc(50% - 10px);
+   margin-top: 20px;
+   flex-direction: column;
+   align-items: center;
+   border: 1px solid #ccc;
+ }
+ 
+ .explanationContent h2 {
+   font-size: 1.3em;
+   margin-bottom: 20px;
+ }
+ 
+ .explanationContent p {
+   font-size: 1.4em;
+   line-height: 1.6;
+ }
+ 
+ .imageSection img {
+   width: 100%;
+   height: auto;
+   border: none;
+   display: block;
+ }
+ 
+ /* Adjustments for smaller screens in the explanation content */
+ @media (max-width: 1268px) {
+   .explanationContent {
+     flex-direction: column;
+     align-items: center;
+     margin-top: -59px;
+     margin-bottom: -69px;
+     font-size: 16px;
+   }
+ 
+   .textSection,
+   .imageSection {
+     width: 100%;
+     margin-bottom: 30px;
+   }
+ 
+   .imageSection {
+     width: 100%;
+     margin-top: 10px;
+     text-align: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border: 1px solid #ccc;
+     box-sizing: border-box;
+   }
+ 
+   .explanationContent h2 {
+     font-size: 3.8em;
+   }
+ 
+   .explanationContent p {
+     font-size: 1em;
+   }
+ 
+   .imageSection img {
+     width: 100%;
+     height: auto;
+     border: 1px solid #ccc;
+     display: block;
+   }
+ }
+ 
+ /* CSS for the shop section */
+ .shopText {
+   font-size: 14px;
+   color: #c7dfff;
+   text-align: center;
+   margin: -29px;
+   margin-top: 44px;
+   max-width: 90%;
+   margin-left: auto;
+   margin-right: auto;
+ }
+ 
+ .shop {
+   display: flex;
+   justify-content: space-around;
+   margin: 40px auto;
+   max-width: 1200px;
+   align-content: center;
+   flex-wrap: wrap;
+ }
+ 
+ .artwork {
+   width: calc(26% - 47px);
+   margin: 3px;
+   text-align: center;
+   color: white;
+   box-sizing: border-box;
+ }
+ 
+ @media (max-width: 768px) {
+   .artwork {
+     width: calc(50% - 20px);
+     margin: 10px 0;
+   }
+ 
+   @media (max-width: 480px) {
+     .artwork {
+       width: calc(100% - 20px);
+       margin: 10px 0;
+     }
+   }
+ }
+ 
+ .artwork img {
+   width: 87%;
+   height: auto;
+   border: 1px solid #ccc;
+ }
+ 
+ .artDetails {
+   text-align: center;
+   margin-top: 3px;
+ }
+ 
+ .artDetails .artTitle {
+   margin: 3px 0;
+ }
+ 
+ 
+ /* Footer styles */
+ footer {
+   /* Styles for the footer */
+ }
+ 
+ .contactSection {
+   color: white;
+   padding: 3px 0px;
+   text-align: center;
+   margin-top: -40px;
+ }
+ 
+ .contactContainer {
+   max-width: 800px;
+   margin: auto;
+ }
+ 
+ .contactContainer h2 {
+   font-size: 2em;
+   margin-bottom: 10px;
+ }
+ 
+ .contactContainer p {
+   font-size: 1.1em;
+   margin-bottom: 20px;
+ }
+ 
+ .contactInfo {
+   font-size: 1.1em;
+ }
+ 
+ .contactInfo p {
+   margin: 5px 0;
+ }
+ 
+ @media (max-width: 480px) {
+   .contactContainer, .contactInfo {
+     font-size: 16px;
+     max-width: 400px;
+   }
+ }
+ 
+ @media (max-width: 768px) {
+   header {
+     margin: 12px auto;
+     max-length: 1%;
+   }
+ }
+ 
